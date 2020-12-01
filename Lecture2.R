@@ -50,7 +50,11 @@ patientdata[c(1, 3), 1:3]
 # 列表
 mylist <- list(patientdata, swim, x)
 mylist
-mylist[1]
+mylist[2]
+mylist[[2]]
+mylist[[2]][1:3]
+mylist[[2]][1:3, 3]
+mylist[[2]][1:3, ]
 
 #作图
 #par设定作图变量，mfow同时画多个图
