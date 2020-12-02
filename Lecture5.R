@@ -8,6 +8,8 @@ set.seed(321)
 x <- matrix(sample(100, 25), nrow = 5, ncol = 5)
 set.seed(213)
 b <- matrix(sample(100, 5), nrow = 5, ncol = 1)
+xxx <- sample(100, 15)
+xxx
 a
 blob
 x
@@ -20,6 +22,7 @@ a * 2
 a^2
 
 # Matrix multiplication
+# a'a
 t(a) %*% blob
 
 # Returns a vector containing the column means of a.
@@ -58,3 +61,7 @@ diag(5)
 
 # Eigenvalues and eigenvectors of a.
 eigen(x)
+
+solve(x)
+t(v) %*% x
+v <- solve(x, diag(5))

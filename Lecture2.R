@@ -72,7 +72,9 @@ axis(1, 2:10)
 # attach(),detach()加入退出检索目录
 attach(mtcars)
 #设定画图格式，矩阵定义图片出现顺序
-layout(matrix(c(1, 1, 2, 3), 2, 2, byrow = TRUE))
+layout(
+    matrix(c(1, 1, 2, 3), 2, 2)
+    )
 temp  <- matrix(c(1, 1, 2, 3), 2, 2, byrow = TRUE)
 temp
 hist(wt)

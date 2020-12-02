@@ -36,7 +36,7 @@ library(plotrix)
 par(mfrow = c(2, 2))
 slices <- c(10, 12, 4, 16, 8)
 lbls <- c("US", "UK", "Australia", "Germany", "France")
-pie(slices, labels = lbls, main = "Simple Pie Chart", edges = 300, radius = 1)
+pie(slices, labels = lbls, main = "Simple Pie Chart", edges = 20, radius = 0.5)
 pct <- round(slices / sum(slices) * 100)
 lbls2 <- paste(lbls, " ", pct, "%", sep = "")
 pie(slices,
@@ -57,7 +57,7 @@ pie(mytable,
 # Fan Plot
 slices <- c(10, 12, 4, 16, 8)
 lbls <- c("US", "UK", "Australia", "Germany", "France")
-fan.plot(slices, labels = lbls, main = "Fan Plot")
+fan.plot(slices, labels = lbls, main = "Fan Plot 11")
 
 # Dot Chart
 dotchart(mtcars$mpg,
@@ -83,8 +83,8 @@ var(states)
 cor(states)
 
 # T test
-x <- rnorm(100, mean = 10, sd = 1)
-y <- rnorm(100, mean = 30, sd = 10)
+x <- rnorm(100, mean = 1, sd = 0)
+y <- rnorm(100, mean = 30, sd = 1)
 t.test(x, y, alt = "two.sided", paired = TRUE)
 
 # Wilcoxon

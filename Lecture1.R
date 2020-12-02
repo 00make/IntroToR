@@ -30,7 +30,7 @@ data3 <- read.csv("http://www.macalester.edu/~kaplan/ISM/datasets/swim100m.csv")
 attach(data3)
 
 set.seed(123)
-x <- rnorm(100, mean = 100, sd = 10)
+x <- rnorm(500, mean = 1000, sd = 100)
 set.seed(234)
 y <- rnorm(100, mean = 100, sd = 10)
 # x hist,9 breaks 直方图
